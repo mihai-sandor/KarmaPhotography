@@ -49,6 +49,7 @@ header {
     text-decoration: underline;
     cursor: default;
     pointer-events: none; 
+    font-weight: bold;
 }
 
 .lista-link a:not(#active) {
@@ -83,27 +84,64 @@ header {
 
 .follow {
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 40px auto;
 }
 
 .follow h3 {
     font-size: 1.5rem;
-    color: #333;
+    color: #0a122aff;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.follow .social-icons {
+
+/* Zona cu icoane */
+.social-icons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px; /* Spatiul dintre icoane */
 }
-.follow .social-icons a {
-    color: #333;
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
+
+/* Stilul general pentru fiecare cerc/icoana */
+.icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color:#fbfaf8ff;
+    color: #804e49ff;
+    border-radius: 50%; /* Rotunjeste butoanele */
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: all 0.3s ease; /* Efectul de tranzitie fina */
 }
-.follow .social-icons a:hover {
+
+/* Efectul de hover general (ridicare usoara) */
+.icon-link:hover {
+    transform: translateY(-5px);
     color: #fbfaf8ff;
+}
+
+/* Culorile oficiale de brand la hover */
+.icon-link.facebook:hover {
+    background-color: #1877F2;
+}
+
+.icon-link.instagram:hover {
+    /* Gradientul specific Instagram */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.icon-link.twitter:hover {
+    background-color: #000000; 
+}
+
+.icon-link.youtube:hover {
+    background-color: #FF0000;
+}
+
+.icon-link.tiktok:hover {
+    background-color: #010101;
+    box-shadow: 2px 2px 0px #00f2fe, -2px -2px 0px #fe0979; 
 }
