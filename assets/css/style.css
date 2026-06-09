@@ -1,3 +1,58 @@
+:root{
+    --bg-color: #905858;
+    --primary-brown: #5c4727;
+    --text-color: #2b2b2b;
+}
+
 body {
-    background-color: #905858;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: transparent;
+}
+
+
+.lista-link {
+    display: flex;
+    flex-direction: row; 
+    gap: 2rem; 
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+#active {
+    color: white;
+    text-decoration: underline;
+    cursor: default;
+    pointer-events: none; 
+}
+
+.lista-link a:not(#active) {
+    color: #2b2b2b; 
+    font-weight: 600; 
+    transition: all 0.3s ease;
+}
+
+.lista-link a:not(#active):hover {
+    color: white;
+    text-decoration: underline;
 }
