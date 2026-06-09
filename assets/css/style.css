@@ -4,6 +4,11 @@
     --text-color: #2b2b2b;
 }
 
+.logo {
+    height: 120px; 
+    width: auto; 
+}
+
 body {
     background-color: var(--bg-color);
     margin: 0;
@@ -55,4 +60,22 @@ header {
 .lista-link a:not(#active):hover {
     color: white;
     text-decoration: underline;
+}
+
+.contact-button {
+    background-color: var(--bg-color);
+    color: black;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: white;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
 }
