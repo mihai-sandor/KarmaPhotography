@@ -1,7 +1,7 @@
 :root{
-    --bg-color: #905858;
-    --primary-brown: #5c4727;
-    --text-color: #2b2b2b;
+    --bg-color:#698f3fff;
+    --primary-brown: #804e49ff;;
+    --text-color: #0a122aff;
 }
 
 .logo {
@@ -45,7 +45,7 @@ header {
 }
 
 #active {
-    color: white;
+    color: #fbfaf8ff;
     text-decoration: underline;
     cursor: default;
     pointer-events: none; 
@@ -58,7 +58,7 @@ header {
 }
 
 .lista-link a:not(#active):hover {
-    color: white;
+    color: #fbfaf8ff;
     text-decoration: underline;
 }
 
@@ -74,8 +74,36 @@ header {
 }
 
 .contact-button:hover {
-    background-color: white;
+    background-color: #fbfaf8ff;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     transform: scale(1.05);
+}
+/*Footer*/
+
+.follow {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 40px auto;
+}
+
+.follow h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.follow .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.follow .social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+.follow .social-icons a:hover {
+    color: #fbfaf8ff;
 }
