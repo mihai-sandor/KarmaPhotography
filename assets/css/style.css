@@ -53,7 +53,7 @@ header {
 }
 
 .lista-link a:not(#active) {
-    color: #2b2b2b; 
+    color: #0a122aff; 
     font-weight: 600; 
     transition: all 0.3s ease;
 }
@@ -65,7 +65,6 @@ header {
 
 .contact-button {
     background-color: var(--bg-color);
-    color: black;
     border: none;
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
@@ -79,6 +78,11 @@ header {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
     transform: scale(1.05);
+}
+.contact-button a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
 }
 /*Footer*/
 
@@ -145,3 +149,50 @@ header {
     background-color: #010101;
     box-shadow: 2px 2px 0px #00f2fe, -2px -2px 0px #fe0979; 
 }
+
+/* Servicii */
+
+/* Sigiliu de ceara */
+
+.sigiliu-ceara {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            background: radial-gradient(circle at 35% 35%, #b51c1c, #700a0a);
+            border-radius: 48% 52% 51% 49% / 55% 45% 56% 44%;
+            box-shadow: 
+                3px 5px 10px rgba(0, 0, 0, 0.4), 
+                inset -3px -3px 7px rgba(0, 0, 0, 0.6), 
+                inset 3px 3px 7px rgba(255, 255, 255, 0.3); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        .sigiliu-ceara:hover {
+            transform: scale(1.05);
+        }
+        .sigiliu-ceara::before {
+            content: '';
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 2px dashed #520404;
+            opacity: 0.4;
+            box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.8), 1px 1px 2px rgba(255, 255, 255, 0.2);
+        }
+        .sigiliu-text {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 32px;
+            font-weight: bold;
+            font-style: italic;
+            color: #4a0303; 
+            text-shadow: 
+                -1px -1px 1px rgba(0, 0, 0, 0.8),  
+                1px 1px 1px rgba(255, 255, 255, 0.2); 
+            
+            z-index: 1;
+            user-select: none;
+        }
