@@ -5,8 +5,13 @@
 }
 
 .logo {
-    height: 120px; 
+    height: 125px; 
     width: auto; 
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0px; 
 }
 
 body {
