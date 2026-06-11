@@ -452,12 +452,15 @@ footer > p:last-child {
     font-size: 3.5rem;
     margin: 3rem 0;
 }
-
+h2 {
+    font-size: 3rem;
+}
 .services-container {
     display: grid;
     gap: 3rem; 
     padding: 0 5%;
     margin-bottom: 5rem;
+    grid-template-columns: auto auto auto;
 }
 
 
